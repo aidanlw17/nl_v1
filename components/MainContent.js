@@ -10,9 +10,9 @@ const MainContent = props => {
                 .main-box {
                     // border: 1px solid #5A5353;
                     width: 95%;
-                    height: 89.3%;
+                    height: 90%;
                     margin-top: 15px;
-                    margin-left: 10px;
+                    margin-left: 15px;
                     margin-right: 15px;
                     margin-bottom: 15px;
                     // bottom: -400px;
