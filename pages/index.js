@@ -123,23 +123,27 @@ const Index = () => (
 			}
 
 			.container {
-				background: #5A5353;
-				color: #9BC1BC;
-				border-radius: 1%;
-				// border: 0.3em solid #bfbdbd;
-				padding: 0px;
+				// padding: 0px;
 				// padding: 2em;
-				margin: 8em 2em 0em 2em;
+				// margin: 8em 2em 0em 2em;
 			}
 
 			.fetch-container {
 				// flex: 1 1 auto;
+				// border-radius: 1%;
+				// border: 0.3em solid #bfbdbd;
+				// border-top: 2em solid #4A4545;
+				border-left: 0.2em solid #4A4545;
+				border-right: 0.2em solid #4A4545;
+				border-bottom: 0.2em solid #4A4545;
 				height: 55%;
 				width: 50%;
 				min-width: 470px;
 				min-height: 450px;
-				margin-left: 10%;
-				// margin: auto;
+				background: #5A5353;
+				color: #9BC1BC;
+				// margin-left: 10%;
+				margin: auto;
 			}
 
 			.info-container {
@@ -152,7 +156,8 @@ const Index = () => (
 			.container-head {
 				height: 2em;
 				background: #4A4545;
-				border-radius: 1%;
+				// border-radius: 1%;
+				// border: 0.2em solid #4A4545;
 			}
 
 			.container-bottom {
