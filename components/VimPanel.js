@@ -1,6 +1,6 @@
 const VimPanel = () => (
     <div className="container">
-        <div className="container-head"></div>
+        {/* <div className="container-head"></div> */}
 		<div className="container-bottom">
             <p className="title"><strong>A short bit about me</strong></p>
             <p>My name is Aidan. At this point, that's obvious.</p>
@@ -38,20 +38,27 @@ const VimPanel = () => (
             .container {
 				background: #5A5353;
 				color: #9BC1BC;
-				border-radius: 1%;
-				// border: 0.3em solid #bfbdbd;
+				// border-radius: 1%;
+                // border: 0.3em solid #bfbdbd;
+                border-top: 2em solid #4A4545;
+				border-left: 0.2em solid #4A4545;
+				border-right: 0.2em solid #4A4545;
+				border-bottom: 0.2em solid #4A4545;
                 // flex: 1 1 auto;
-				height: 93%;
-                width: 66%;
-                margin: 2em;
+				// height: 100%;
+                width: 55%;
+                // margin: 2em;
+                vertical-align: center;
+                margin: 5em auto;
 				min-width: 470px;
 				min-height: 450px;
             }
 
             .container-bottom {
-                padding-top: 3em;
-                padding-left: 10em;
-                padding-right: 10em;
+                padding-top: 5em;
+                padding-bottom: 5em;
+                padding-left: 8em;
+                padding-right: 8em;
             }
 
             .title {
@@ -70,11 +77,11 @@ const VimPanel = () => (
                 color: #F4F1BB;
             }
 
-            .container-head {
-                height: 2em;
-                background: #4A4545;
-                border-radius: 1%;
-            }
+            // .container-head {
+            //     height: 2em;
+            //     background: #4A4545;
+            //     // border-radius: 1%;
+            // }
         `}</style>
     </div>
 );

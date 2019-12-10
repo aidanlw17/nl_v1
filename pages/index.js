@@ -8,7 +8,7 @@ const Index = () => (
 	<Layout>
 		<div className="box">
 		<div className="container fetch-container">
-			<div className="container-head"></div>
+			{/* <div className="container-head"></div> */}
 			<div className="container-bottom">
 				<p>[aidan@noodlab ~]$ echo "Welcome to NoodLab! Make yourself at home."</p>
 				<p>Welcome to NoodLab! Make yourself at home.</p>
@@ -122,21 +122,15 @@ const Index = () => (
 				height: 100%;
 			}
 
-			.container {
-				// padding: 0px;
-				// padding: 2em;
-				// margin: 8em 2em 0em 2em;
-			}
-
 			.fetch-container {
 				// flex: 1 1 auto;
 				// border-radius: 1%;
 				// border: 0.3em solid #bfbdbd;
-				// border-top: 2em solid #4A4545;
+				border-top: 2em solid #4A4545;
 				border-left: 0.2em solid #4A4545;
 				border-right: 0.2em solid #4A4545;
 				border-bottom: 0.2em solid #4A4545;
-				height: 55%;
+				height: 48%;
 				width: 50%;
 				min-width: 470px;
 				min-height: 450px;
@@ -153,12 +147,12 @@ const Index = () => (
 				float: right;
 			}
 
-			.container-head {
-				height: 2em;
-				background: #4A4545;
-				// border-radius: 1%;
-				// border: 0.2em solid #4A4545;
-			}
+			// .container-head {
+			// 	height: 2em;
+			// 	background: #4A4545;
+			// 	// border-radius: 1%;
+			// 	// border: 0.2em solid #4A4545;
+			// }
 
 			.container-bottom {
 				// height: 500em;
