@@ -11,6 +11,9 @@ const Header = () => (
 
         <ul className="nav-ul nav-ul-right">
             <li>
+                <Link href="/"><a>home</a></Link>
+            </li>
+            <li>
                 <Link href="/about"><a>about</a></Link>
             </li>
             <li>
@@ -26,11 +29,14 @@ const Header = () => (
         <style jsx>{`
         nav {
             font-family: monospace;
-            height: 48px;
-            padding-top: 24px;
-            padding-right: 20px;
-            margin-right: 0px;
-            margin-left: 20px;
+            // display: flex;
+            height: 2em;
+            // width: 100%;
+            background: #4A4545;
+            // padding-top: 24px;
+            // padding-right: 20px;
+            // margin-right: 0px;
+            // margin-left: 20px;
             align-content: center;
             border-left: 1px solid #5A5353;
             border-bottom: 1px solid #5A5353;
@@ -53,11 +59,11 @@ const Header = () => (
             float: left;
         }
 
-        .nav-ul-middle {
-            font-size: 0.9em;
-            padding: 0px;
-            margin: 0.3em 20px;
-        }
+        // .nav-ul-middle {
+        //     font-size: 0.9em;
+        //     padding: 0px;
+        //     margin: 0.3em 20px;
+        // }
 
         .nav-ul-right {
             font-size: 0.9em;
@@ -79,7 +85,8 @@ const Header = () => (
             display: inline-block;
             margin: 0px 20px;
             padding: 2px 10px;
-            color: #5A5353;
+            // color: #5A5353;
+            color: #E6EBE0;
         }
 
         a:before, a:after {
@@ -109,6 +116,7 @@ const Header = () => (
 
         .active {
             // font-weight: bold;
+            // border-bottom: 2px solid grey;
         }
         `}</style>
     </nav>
