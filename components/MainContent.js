@@ -4,11 +4,11 @@ const MainContent = props => {
     // const router = useRouter();
     return (
         <div className="main-box">
-        <div className="main-box-head"><span>:prev current - index next:</span></div>
+        {/* <div className="main-box-head"><span>:prev current - index next:</span></div> */}
             {props.children}
             <style jsx>{`
                 .main-box {
-                    border: 1px solid #5A5353;
+                    // border: 1px solid #5A5353;
                     width: 95%;
                     height: 89.3%;
                     margin-top: 15px;

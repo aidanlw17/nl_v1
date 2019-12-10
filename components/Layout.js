@@ -9,9 +9,9 @@ const Layout = props => (
             <title>Aidan Lawford-Wickham</title>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         </Head>
-        <Header />
+        {/* <Header /> */}
         <div className="box">
-			<MediaBar />
+			{/* <MediaBar /> */}
 			<MainContent>
                 {props.children}
             </MainContent>
@@ -27,9 +27,11 @@ const Layout = props => (
             }
 
             body { 
-                background: #E6EBE0;
+                // background: #E6EBE0;
+                background: #5A5353;
                 font: 11px menlo;
                 color: #5A5353;
+                color: #E6EBE0;
                 margin-top: 0;
                 margin-right: 0;
                 height: 100%;
