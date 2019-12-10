@@ -1,5 +1,7 @@
 import Header from './Header';
 import Head from 'next/Head';
+import MediaBar from '../components/MediaBar';
+import MainContent from '../components/MainContent';
 
 const Layout = props => (
     <div>
@@ -8,7 +10,12 @@ const Layout = props => (
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         </Head>
         <Header />
-        {props.children}
+        <div className="box">
+			<MediaBar />
+			<MainContent>
+                {props.children}
+            </MainContent>
+		</div>
         <style jsx global>{`
             html,
             body,
@@ -16,6 +23,7 @@ const Layout = props => (
             div#__next,
             div#__next > div {
                 height: 100%;
+                overflow: hidden;
             }
 
             body { 
@@ -26,6 +34,11 @@ const Layout = props => (
                 margin-right: 0;
                 height: 100%;
             }
+
+            .box {
+				display: flex;
+				height: 100%;
+			}
         `}</style>
     </div>
 );
