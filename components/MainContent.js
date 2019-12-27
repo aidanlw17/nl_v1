@@ -9,15 +9,16 @@ const MainContent = props => {
             <style jsx>{`
                 .main-box {
                     // border: 1px solid #5A5353;
-                    width: 95%;
-                    height: 90%;
-                    margin-top: 15px;
-                    margin-left: 15px;
-                    margin-right: 15px;
-                    margin-bottom: 15px;
+                    width: 100%;
+                    // height: 90%;
+                    // margin-top: 15px;
+                    // margin-left: 15px;
+                    // margin-right: 15px;
+                    // margin-bottom: 15px;
                     // bottom: -400px;
-                    flex: 1 1 auto;
+                    // flex: 1 1 auto;
                     align-content: center;
+                    // overflow: auto;
                 }
 
                 .main-box-head {

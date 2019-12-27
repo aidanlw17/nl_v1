@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import Messenger from '../components/Messenger';
 import Timer from '../components/Timer';
+import Link from "next/link";
 
 const news = ['Aidan Lawford-Wickham', 'Engineering Scientist', 'Creative Mind', 'Machine Intelligence Specialist', 'Software Developer'];
 
@@ -52,13 +53,42 @@ const Index = () => (
 					</li>
 				</ul>
 				</div>
+				<p>[aidan@noodlab ~]$ social</p>
+				<ul>
+                <li className="social-list"><a className="social-a"href="https://www.github.com/aidanlw17" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>
+                <li className="social-list"><a className="social-a"href="https://www.linkedin.com/in/alawfordwickham/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li className="social-list"><a className="social-a"href="https://www.medium.com/@aidan.lw17" target="_blank" rel="noopener noreferrer"><i className="fa fa-medium" aria-hidden="true"></i></a></li>
+            	</ul>
 				<p>[aidan@noodlab ~]$ who am i</p>
 				<p><Messenger news={news}/></p>
-				{/* <p id="last-p">[aidan@noodlab ~]$ |</p> */}
 			</div>
 		</div>
 		</div>
 		<style>{`
+			.social-list {
+				list-style-type: none;
+				display: inline;
+				padding-right: 5%;
+			}
+
+			// .social-a {
+			// 	width: 40px;
+			// 	height: 40px;
+			// }
+
+			.social-list i {
+                color: #EFF8E2;
+                padding: 3px;
+                // width: 40px;
+                // height: 40px;
+                text-align: center;
+                font-size: 1.3em;
+			}
+			
+			.social-list i:hover {
+				transform: scale(1.3, 1.3);
+			}
+
 			.palette {
 				display: inline;
 			}
@@ -123,13 +153,14 @@ const Index = () => (
 			}
 
 			.fetch-container {
+				font-size: 1.2em;
 				// flex: 1 1 auto;
 				// border-radius: 1%;
 				// border: 0.3em solid #bfbdbd;
-				border-top: 2em solid #4A4545;
-				border-left: 0.2em solid #4A4545;
-				border-right: 0.2em solid #4A4545;
-				border-bottom: 0.2em solid #4A4545;
+				// border-top: 2em solid #4A4545;
+				// border-left: 0.2em solid #4A4545;
+				// border-right: 0.2em solid #4A4545;
+				// border-bottom: 0.2em solid #4A4545;
 				height: 48%;
 				width: 50%;
 				min-width: 470px;
@@ -137,7 +168,9 @@ const Index = () => (
 				background: #5A5353;
 				color: #9BC1BC;
 				// margin-left: 10%;
-				margin: auto;
+				margin-top: 2em;
+				padding-right: 100px;
+				padding-left: 100px;
 			}
 
 			.info-container {

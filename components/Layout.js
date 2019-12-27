@@ -10,12 +10,12 @@ const Layout = props => (
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         </Head>
         <Header />
-        <div className="box">
+        {/* <div className="box"> */}
 			{/* <MediaBar /> */}
 			<MainContent>
                 {props.children}
             </MainContent>
-		</div>
+		{/* </div> */}
         <style jsx global>{`
             html,
             body,
@@ -23,7 +23,8 @@ const Layout = props => (
             div#__next,
             div#__next > div {
                 height: 100%;
-                overflow: hidden;
+                // overflow: auto;
+                // position: absolute;
             }
 
             body { 

@@ -1,8 +1,11 @@
 import Layout from '../components/Layout';
+import WorkPanel from '../components/WorkPanel';
+// import WorkExplorer from '../components/WorkExplorer';
 
 const Work = () => (
 	<Layout>
-        <h1>Coming Soon!</h1>
+        {/* <WorkExplorer /> */}
+		<WorkPanel />
 	</Layout>
 );
 
