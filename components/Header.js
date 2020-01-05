@@ -30,9 +30,9 @@ class Header extends React.Component {
                 <li>
                     <Link href="/about"><a className={this.state.active === "/about" ? "active" : ""}>about</a></Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link href="/work"><a className={this.state.active === "/work" ? "active" : ""}>work</a></Link>
-                </li>
+                </li> */}
                 <li>
                     <Link href="/blog"><a className={this.state.active === "/blog" ? "active" : ""}>blog</a></Link>
                 </li>
@@ -51,22 +51,25 @@ class Header extends React.Component {
                 // padding-top: 24px;
                 padding-right: 80px;
                 padding-left: 80px;
-                // margin-right: 0px;
-                // margin-left: 20px;
+                margin-left: 10%;
+                margin-right: 10%;
                 margin-top: 3em;
                 align-content: center;
-                border-left: 1px solid #5A5353;
-                border-bottom: 1px solid #5A5353;
+                // border-left: 1px solid #5A5353;
+                // border-bottom: 1px solid #5A5353;
                 // position: absolute; //i
             }
 
             nav li {
                 list-style-type: none;
-                display: inline;
+                display: inline-block;
+                // margin: auto;
+                width: fit-content;
             }
 
             .nav-ul {
-                display: inline;
+                // display: inline; // Uncomment to move left
+                text-align: center;
             }
 
             .nav-ul-left {
@@ -105,8 +108,10 @@ class Header extends React.Component {
                 margin: 0px 20px;
                 padding: 2px 10px;
                 // color: #5A5353;
-                color: #E6EBE0;
+                // color: #E6EBE0;
                 // color: #F4F1BB;
+                // color: #2C4251;
+                color: #393E41;
             }
 
             .nav-ul-left a {
@@ -124,7 +129,7 @@ class Header extends React.Component {
                 transition: width 0.2s ease-in;
                 width: 0px;
                 opacity: 0;
-                background-color: #9BC1BC;
+                background-color: #E7BB41;
                 left: 0;
                 position: relative;
                 display: block;
@@ -153,7 +158,7 @@ class Header extends React.Component {
                 content: "";
                 width: 100%;
                 opacity: 1;
-                background-color: #9BC1BC;
+                background-color: #E7BB41;
                 top: 0;
                 position: relative;
                 display: block;

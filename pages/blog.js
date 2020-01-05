@@ -1,10 +1,12 @@
 import Layout from '../components/Layout';
-import WorkExplorer from '../components/WorkExplorer';
+import BlogView from '../components/BlogView';
 
-const Blog = () => (
-	<Layout>
-		<h1>Hello</h1>
-	</Layout>
-);
+function Blog() {
+	return (
+		<Layout>
+			<BlogView />
+		</Layout>
+	);
+}
 
 export default Blog;
