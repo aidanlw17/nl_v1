@@ -27,64 +27,19 @@ const VimPanel = () => (
                 <li>Twitter: <a href="https://twitter.com/aidanlw17" target="_blank">aidanlw17</a></li>
                 <li>Freenode IRC: aidanlw17</li>
             </ul>
-            {/* <p>You can also find me on GitHub, LinkedIn, and Twitter!</p>
-            <ul>
-                <li><a href="https://www.github.com/aidanlw17" target="_blank">github.com/aidanlw17</a></li>
-                <li><a href="https://www.linkedin.com/in/alawfordwickham/" target="_blank">linkedin.com/in/alawfordwickham</a></li>
-            </ul> */}
-            {/* <p className="title"><strong>FAQ</strong></p>
-            <p>Q: Where does the name 'NoodLab' come from?</p>
-            <p>A: My first gamertag on Xbox was 'angrynoodle117', and like all programmers, at first I wanted to develop video games. Of course, the name of my studio would have to follow from my gamertag!</p> */}
         </div>
         <style jsx>{`
-            // .container {
-			// 	background: #FFFFFF;
-			// 	color: #9BC1BC;
-			// 	// border-radius: 1%;
-            //     // border: 0.3em solid #bfbdbd;
-            //     // border-top: 2em solid #4A4545;
-			// 	// border-left: 0.2em solid #4A4545;
-			// 	// border-right: 0.2em solid #4A4545;
-			// 	// border-bottom: 0.2em solid #4A4545;
-            //     // flex: 1 1 auto;
-			// 	// height: 100%;
-            //     width: 60%;
-            //     // margin: 2em;
-            //     vertical-align: center;
-            //     margin: 0em 2em;
-			// 	min-width: 470px;
-            //     min-height: 450px;
-            //     font-size: 1.2em;
-            // }
-
             .container {
 				font-size: 1.2em;
-				// flex: 1 1 auto;
-				// border-radius: 1%;
-				// border: 0.3em solid #bfbdbd;
-				// border-top: 2em solid #4A4545;
-				// border-left: 0.2em solid #4A4545;
-				// border-right: 0.2em solid #4A4545;
-				// border-bottom: 0.2em solid #4A4545;
-				// height: 48%;
 				width: 56%;
 				min-width: 470px;
 				min-height: 450px;
 				background: #FFFFFF;
 				color: #363537;
-				// margin-left: 10%;
-				// margin-top: 2em;
 				margin: 3em auto;
 				padding-right: 100px;
 				padding-left: 100px;
 			}
-
-            // .container-bottom {
-            //     // padding-top: 2em;
-            //     padding-bottom: 5em;
-            //     padding-left: 8em;
-            //     padding-right: 8em;
-            // }
 
             .title {
                 font-size: 1em;
@@ -100,7 +55,6 @@ const VimPanel = () => (
             a {
                 text-decoration: none;
                 font-weight: bold;
-                // color: #F4F1BB;
                 color: #E7BB41;
             }
 
