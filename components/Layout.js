@@ -1,6 +1,5 @@
 import Header from './Header';
 import Head from 'next/Head';
-import MediaBar from '../components/MediaBar';
 import MainContent from '../components/MainContent';
 
 const Layout = props => (
@@ -12,8 +11,6 @@ const Layout = props => (
                 rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
                 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'></link>
-            {/* <link rel="shortcut icon" href="../public/favicon.ico" /> */}
-            {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"/> */}
         </Head>
         <Header />
         <MainContent>
@@ -32,26 +29,15 @@ const Layout = props => (
             }
 
             body { 
-                // background: #E6EBE0;
-                // background: #5A5353;
                 background: #FFFFFF;
                 font: 11px menlo;
-                // color: #5A5353;
-                // color: #E6EBE0;
                 color: #2C4251;
                 margin-top: 0;
                 margin-right: 0;
                 margin-left: 0;
                 height: 100%;
-                // border: 1px solid black;
-                // margin: 20px
                 overflow: auto;
             }
-
-            // code, pre {
-            //     // background: black;
-            //     // color: #FFFFFF;
-            // }
 
             :not(pre) > code {
                 padding: 3px 5px;
