@@ -11,7 +11,7 @@ const VimPanel = () => (
             <br />
             <p>I was previously a Google Summer of Code student developer at <a>MetaBrainz Foundation Inc</a>.</p>
             <p>Find my other projects on <a href="https://www.github.com/aidanlw17" target="_blank">GitHub</a>, add me on <a href="https://www.linkedin.com/in/alawfordwickham/" target="_blank">LinkedIn</a>, and check out my <a href="/resume.pdf" target="_blank">resume</a>!</p>
-            <p>You can also read about my work <a href="https://blog.metabrainz.org/2019/08/26/gsoc-2019-recording-similarity-indexing-for-acousticbrainz/" target="_blank">here</a>, or <Link href="/blog" target="_blank"><a>here</a></Link>.</p>
+            <p>You can also read about my work <a href="https://blog.metabrainz.org/2019/08/26/gsoc-2019-recording-similarity-indexing-for-acousticbrainz/" target="_blank">here</a>, or <Link href="/blog"><a target="_blank">here</a></Link>.</p>
             <br />
             <p>I enjoy challenging projects, competition, and the opportunity to collaborate with other developers.</p>
             <p>My technical interests include cloud computing, networking, operating systems, and machine learning.</p>

@@ -1,7 +1,6 @@
 import Layout from '../components/Layout';
 import Messenger from '../components/Messenger';
 import Timer from '../components/Timer';
-import Link from "next/link";
 
 const news = ['Aidan Lawford-Wickham', 'Engineering Scientist', 'Creative Mind', 'Machine Intelligence Specialist', 'Software Developer'];
 
@@ -24,17 +23,15 @@ const Index = () => (
 | $$  \$$$ \$$    $$ \$$    $$ \$$    $$| $$     \\$$    $$| $$    $$<br />
  \$$   \$$  \$$$$$$   \$$$$$$   \$$$$$$$ \$$$$$$$$ \$$$$$$$ \$$$$$$$ <br /></pre>
 				<ul className="fetch-info">
-					<li><strong className="name">aidan@noodlab</strong></li>
+					<li><strong className="name info">aidan@noodlab</strong></li>
 					<li>-------------</li>
-					{/* <li><strong>OS</strong>: Arch Linux x86_64</li> */}
-					<li><strong>OS</strong>: Nood_OS x86_64</li>
-					{/* <li><strong>Kernel</strong>: 5.3.11-arch1-1</li> */}
-					<li><strong>Kernel</strong>: 5.3.11-nood1-1</li>
-					<li><strong>Uptime</strong>: <Timer /></li>
-					<li><strong>Updated:</strong>: 05/01/2020</li>
-					<li><strong>Packages</strong>: 583 (pacman)</li>
-					<li><strong>Shell</strong>: bash 5.0.11</li>
-					<li><strong>Status</strong>: Searching for Internship</li>
+					<li><strong className="info">OS</strong>: Nood_OS x86_64</li>
+					<li><strong className="info">Kernel</strong>: 5.3.11-nood1-1</li>
+					<li><strong className="info">Uptime</strong>: <Timer /></li>
+					<li><strong className="info">Updated:</strong>: 14/01/2020</li>
+					<li><strong className="info">Packages</strong>: 583 (pacman)</li>
+					<li><strong className="info">Shell</strong>: bash 5.0.11</li>
+					<li><strong className="info">Status</strong>: Searching for Internship</li>
 					<br />
 					<li className="palette">
 						<div className="palette-box colour-1"></div>
@@ -62,16 +59,9 @@ const Index = () => (
 				padding-right: 5%;
 			}
 
-			// .social-a {
-			// 	width: 40px;
-			// 	height: 40px;
-			// }
-
 			.social-list i {
                 color: #363537;
                 padding: 3px;
-                // width: 40px;
-                // height: 40px;
                 text-align: center;
                 font-size: 1.3em;
 			}
@@ -93,52 +83,31 @@ const Index = () => (
 			}
 
 			.colour-1 {
-				// background: #ED6A5A;
-				// background: #32936F;
-				// background: #60463B;
-				// background: #F5F2F0;
 				background: #BF1A2F;
 			}
 
 			.colour-2 {
-				// background: #F4F1BB;
-				// background: #BF1A2F;
 				background: #E7BB41;
 			}
 
 			.colour-3 {
-				// background: #9BC1BC;
-				// background: #E7BB41;
 				background: #FFFFFF;
 			}
 
 			.colour-4 {
-				// background: #E6EBE0;
 				background: #F5F2F0;
 			}
 
 			.colour-5 {
-				// background: #4A4545;
 				background: #363537;
 			}
 
 			.name {
-				// color: #ED6A5A;
-				// color: #B6C649;
-				// color: #B97375;
 				color: #BF1A2F;
-				// color: #FB3640;
-				// color: #E54B4B;
 			}
 
-			li > strong {
-				// color: #B6C649;
-				// color: #FC7753;
-				// color: #624763;
-				// color: #B0D0D3;
-				// color: #B97375;
+			.info {
 				color: #BF1A2F;
-				// color: #363537;
 			}
 
 			.ascii {
@@ -148,10 +117,6 @@ const Index = () => (
 				flex: 1 1 auto;
 				padding: 0em;
 			}
-
-			// #last-p {
-			// 	bottom: 0px;
-			// }
 
 			.fetch-info {
 				list-style-type: none;
@@ -164,50 +129,22 @@ const Index = () => (
 			}
 
 			.box {
-				// display: flex;
 				height: 100%;
-				// margin: 0 auto;
 			}
 
 			.container {
 				font-size: 1.2em;
-				// flex: 1 1 auto;
-				// border-radius: 1%;
-				// border: 0.3em solid #bfbdbd;
-				// border-top: 2em solid #4A4545;
-				// border-left: 0.2em solid #4A4545;
-				// border-right: 0.2em solid #4A4545;
-				// border-bottom: 0.2em solid #4A4545;
-				// height: 48%;
 				width: 56%;
 				min-width: 470px;
 				min-height: 450px;
 				background: #FFFFFF;
 				color: #363537;
-				// margin-left: 10%;
-				// margin-top: 2em;
 				margin: 3em auto;
 				padding-right: 100px;
 				padding-left: 100px;
 			}
 
-			// .container-head {
-			// 	height: 2em;
-			// 	background: #4A4545;
-			// 	// border-radius: 1%;
-			// 	// border: 0.2em solid #4A4545;
-			// }
-
-			.container-bottom {
-				// height: 500em;
-			}
-
-			p {
-				// padding-left: 3%;
-			}
-
 			.info-p {
-				// text-align: left;
 				position: relative;
 				top: 50%;
 				padding-left: 10%;

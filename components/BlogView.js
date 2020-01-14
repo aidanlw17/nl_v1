@@ -16,13 +16,9 @@ export default function BlogView(props) {
 
     return (
         <div className="container">
-            {/* <p><strong>[aidan@noodlab ~]$</strong> ls -l *post*</p> */}
             <p><strong>[aidan@noodlab ~]$</strong> ls -lt</p>
             <ul>
                 {posts}
-                {/* {tempPosts} */}
-                {/* <li>22/09/2020 <a>A Guide to my Blog Setup</a></li>
-                <li></li> */}
             </ul>
             <style jsx>{`
                 .container {
