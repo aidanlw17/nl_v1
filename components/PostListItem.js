@@ -1,43 +1,56 @@
 import Link from "next/link";
 
 const PostListItem = (props) => {
+    // const tagStyle = {
+    //     color: "#363537",
+    //     fontSize: "11px",
+    //     // color: "#BF1A2F",
+    //     padding: "2px 5px",
+    //     margin: "2px 5px",
+    //     display: "inline",
+    //     borderRadius: "4px",
+    //     textTransform: "uppercase"
+    // }
     const tagStyle = {
         color: "#363537",
         fontSize: "11px",
         // color: "#BF1A2F",
-        padding: "2px 5px",
-        margin: "2px 5px",
+        padding: "2px 6px",
+        marginRight: "8px",
         display: "inline",
         borderRadius: "4px",
-        textTransform: "uppercase"
+        textTransform: "uppercase",
+        // background: "#C8C8C8"
+        background: "#f5f2f0"
     }
 
     const tags = props.tags.map(
         tag => <li style={tagStyle} key={tag} className="tag">{tag}</li>
     );
     return (
-        <li>
-            <p>
+        <li key={props.slug}>
+            <div>
                 <span className="date">{props.date}</span>
-                <Link href={`/posts/${props.id}`}><a className="title">{props.title}</a></Link>
+                <Link href={`/posts/${props.slug}`}><a className="title">{props.title}</a></Link>
                 <ul className="tags">
                     {tags}
                 </ul>
-            </p>
+            </div>
             <style jsx>{`
                 .tag {
                     // margin: 4px;
                 }
 
-                p {
+                div {
                     display: flex;
+                    margin-bottom: 16px;
                 }
                 
                 .date {
                     flex: 0;
                     // color: #BF1A2F;
                     // width: 30px;
-                    // min-width: 30px;
+                    min-width: 100px;
                 }
 
                 .title {
@@ -49,6 +62,7 @@ const PostListItem = (props) => {
                     // color: #363357;
                     font-weight: bold;
                     color: #E7BB41;
+                    min-width: 300px;
                 }
 
                 // .title:hover {

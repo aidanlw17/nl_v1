@@ -49,7 +49,6 @@ class Tabs extends React.Component {
                 <div className="tab-content">
                     {children.map((child) => {
                         if (child.props.label !== activeTab) return undefined;
-                        console.log(child.props);
                         return child;
                     })}
                 </div>

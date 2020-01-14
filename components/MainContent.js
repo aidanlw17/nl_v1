@@ -15,7 +15,7 @@ const MainContent = props => {
                 .main-box {
                     // border: 1px solid #5A5353;
                     width: 100%;
-                    height: 100%;
+                    // height: 100%;
                     // height: 90%;
                     // margin-top: 15px;
                     // margin-left: 15px;
@@ -28,7 +28,7 @@ const MainContent = props => {
                 }
 
                 .sitemap {
-                    position: absolute;
+                    position: fixed;
                     bottom: 14px;
                     left: 14px;
                 }

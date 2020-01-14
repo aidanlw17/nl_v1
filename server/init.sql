@@ -1,0 +1,6 @@
+CREATE TABLE blog (
+    id SERIAL,
+    data JSONB NOT NULL
+);
+
+ALTER TABLE blog ADD CONSTRAINT blog_pkey PRIMARY KEY (id);

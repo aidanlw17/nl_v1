@@ -34,7 +34,7 @@ class Header extends React.Component {
                     <Link href="/work"><a className={this.state.active === "/work" ? "active" : ""}>work</a></Link>
                 </li> */}
                 <li>
-                    <Link href="/blog"><a className={this.state.active === "/blog" ? "active" : ""}>blog</a></Link>
+                    <Link href="/blog"><a className={this.state.active !== "/about" && this.state.active !==  "/" ? "active" : ""}>blog</a></Link>
                 </li>
                 <li>
                     <a target="_blank" href="/resume.pdf">resume</a>

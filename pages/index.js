@@ -95,22 +95,26 @@ const Index = () => (
 			.colour-1 {
 				// background: #ED6A5A;
 				// background: #32936F;
-				background: #60463B;
+				// background: #60463B;
+				// background: #F5F2F0;
+				background: #BF1A2F;
 			}
 
 			.colour-2 {
 				// background: #F4F1BB;
-				background: #BF1A2F;
+				// background: #BF1A2F;
+				background: #E7BB41;
 			}
 
 			.colour-3 {
 				// background: #9BC1BC;
-				background: #E7BB41;
+				// background: #E7BB41;
+				background: #FFFFFF;
 			}
 
 			.colour-4 {
 				// background: #E6EBE0;
-				background: #FFFFFF;
+				background: #F5F2F0;
 			}
 
 			.colour-5 {
