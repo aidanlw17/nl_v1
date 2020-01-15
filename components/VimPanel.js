@@ -2,9 +2,7 @@ import Link from "next/link";
 
 const VimPanel = () => (
     <div className="container">
-        {/* <div className="container-head"></div> */}
 		<div className="container-bottom">
-            {/* <p className="title"><strong>A short bit about me</strong></p> */}
             <p><strong>[aidan@noodlab ~]$</strong> cat about.txt</p>
             <p>Hey, it's nice to meet you.</p>
             <p>I'm a software developer and a student in <a href="https://engsci.utoronto.ca/explore_our_program/about_engsci/" target="_blank">Engineering Science at the University of Toronto</a>.</p>
@@ -58,11 +56,6 @@ const VimPanel = () => (
                 color: #E7BB41;
             }
 
-            // .container-head {
-            //     height: 2em;
-            //     background: #4A4545;
-            //     // border-radius: 1%;
-            // }
             span {
                 color: #BF1A2F;
                 font-weight: bold;
