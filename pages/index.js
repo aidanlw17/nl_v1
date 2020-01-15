@@ -6,42 +6,32 @@ const news = ['Aidan Lawford-Wickham', 'Engineering Scientist', 'Creative Mind',
 
 const Index = () => (
 	<Layout>
-		<div className="box">
-		<div className="container fetch-container">
-			<div className="container-head"></div>
+		<div className="container">
+			{/* <div className="container-head"></div> */}
 			<div className="container-bottom">
-				<p>[aidan@noodlab ~]$ echo "Welcome to NoodLab! Make yourself at home."</p>
+				<p><strong>[aidan@noodlab ~]$</strong> echo "Welcome to NoodLab! Make yourself at home."</p>
 				<p>Welcome to NoodLab! Make yourself at home.</p>
-				<p>[aidan@noodlab ~]$ neofetch</p>
+				<p><strong>[aidan@noodlab ~]$</strong> neofetch</p>
 				<div className="ascii-box">
-				<pre className="ascii">-`<br />
-                  .o+`<br />
-                 `ooo/<br />
-                `+oooo:<br />
-               `+oooooo:<br />
-               -+oooooo+:<br />
-             `/:-:++oooo+:<br />
-            `/++++/+++++++:<br />
-           `/++++++++++++++:<br />
-          `/+++ooooooooooooo/`<br />
-         ./ooosssso++osssssso+`<br />
-        .oossssso-````/ossssss+`<br />
-       -osssssso.      :ssssssso.<br />
-      :osssssss/        osssso+++.<br />
-     /ossssssss/        +ssssooo/-<br />
-   `/ossssso+/:-        -:/+osssso+-<br />
-  `+sso+:-`                 `.-/+oso:<br />
- `++:.                           `-/+/<br />
- .`                                 `</pre>
+				<pre className="ascii">__    __                            __  __                 __      <br />
+|  \  |  \                          |  \|  \               |  \      <br />
+| $$\ | $$  ______    ______    ____| $$| $$       ______  | $$____  <br />
+| $$$\| $$ /      \  /      \  /      $$| $$      |      \ | $$    \ <br />
+| $$$$\ $$|  $$$$$$\|  $$$$$$\|  $$$$$$$| $$       \$$$$$$\| $$$$$$$\<br />
+| $$\$$ $$| $$  | $$| $$  | $$| $$  | $$| $$      /      $$| $$  | $$<br />
+| $$ \$$$$| $$__/ $$| $$__/ $$| $$__| $$| $$_____|  $$$$$$$| $$__/ $$<br />
+| $$  \$$$ \$$    $$ \$$    $$ \$$    $$| $$     \\$$    $$| $$    $$<br />
+ \$$   \$$  \$$$$$$   \$$$$$$   \$$$$$$$ \$$$$$$$$ \$$$$$$$ \$$$$$$$ <br /></pre>
 				<ul className="fetch-info">
-					<li><strong className="name">aidan@noodlab</strong></li>
+					<li><strong className="name info">aidan@noodlab</strong></li>
 					<li>-------------</li>
-					<li><strong>OS</strong>: Arch Linux x86_64</li>
-					<li><strong>Kernel</strong>: 5.3.11-arch1-1</li>
-					<li><strong>Uptime</strong>: <Timer /></li>
-					<li><strong>Packages</strong>: 583 (pacman)</li>
-					<li><strong>Shell</strong>: bash 5.0.11</li>
-					<li><strong>Status</strong>: Searching for Internship</li>
+					<li><strong className="info">OS</strong>: Nood_OS x86_64</li>
+					<li><strong className="info">Kernel</strong>: 5.3.11-nood1-1</li>
+					<li><strong className="info">Uptime</strong>: <Timer /></li>
+					<li><strong className="info">Updated:</strong>: 14/01/2020</li>
+					<li><strong className="info">Packages</strong>: 583 (pacman)</li>
+					<li><strong className="info">Shell</strong>: bash 5.0.11</li>
+					<li><strong className="info">Status</strong>: Searching for Internship</li>
 					<br />
 					<li className="palette">
 						<div className="palette-box colour-1"></div>
@@ -52,13 +42,34 @@ const Index = () => (
 					</li>
 				</ul>
 				</div>
-				<p>[aidan@noodlab ~]$ who am i</p>
+				<p><strong>[aidan@noodlab ~]$</strong> social</p>
+				<ul>
+                <li className="social-list"><a className="social-a"href="https://www.github.com/aidanlw17" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>
+                <li className="social-list"><a className="social-a"href="https://www.linkedin.com/in/alawfordwickham/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li className="social-list"><a className="social-a"href="https://www.medium.com/@aidan.lw17" target="_blank" rel="noopener noreferrer"><i className="fa fa-medium" aria-hidden="true"></i></a></li>
+            	</ul>
+				<p><strong>[aidan@noodlab ~]$</strong> whoami</p>
 				<p><Messenger news={news}/></p>
-				{/* <p id="last-p">[aidan@noodlab ~]$ |</p> */}
 			</div>
 		</div>
-		</div>
 		<style>{`
+			.social-list {
+				list-style-type: none;
+				display: inline;
+				padding-right: 5%;
+			}
+
+			.social-list i {
+                color: #363537;
+                padding: 3px;
+                text-align: center;
+                font-size: 1.3em;
+			}
+			
+			.social-list i:hover {
+				transform: scale(1.3, 1.3);
+			}
+
 			.palette {
 				display: inline;
 			}
@@ -72,27 +83,31 @@ const Index = () => (
 			}
 
 			.colour-1 {
-				background: #ED6A5A;
+				background: #BF1A2F;
 			}
 
 			.colour-2 {
-				background: #F4F1BB;
+				background: #E7BB41;
 			}
 
 			.colour-3 {
-				background: #9BC1BC;
+				background: #FFFFFF;
 			}
 
 			.colour-4 {
-				background: #E6EBE0;
+				background: #F5F2F0;
 			}
 
 			.colour-5 {
-				background: #4A4545;
+				background: #363537;
 			}
 
-			.name, strong {
-				color: #ED6A5A;
+			.name {
+				color: #BF1A2F;
+			}
+
+			.info {
+				color: #BF1A2F;
 			}
 
 			.ascii {
@@ -100,12 +115,8 @@ const Index = () => (
 				white-space: pre;
 				text-align: center;
 				flex: 1 1 auto;
-				padding: 0em 2em;
+				padding: 0em;
 			}
-
-			// #last-p {
-			// 	bottom: 0px;
-			// }
 
 			.fetch-info {
 				list-style-type: none;
@@ -118,53 +129,22 @@ const Index = () => (
 			}
 
 			.box {
-				display: flex;
 				height: 100%;
 			}
 
 			.container {
-				background: #5A5353;
-				color: #9BC1BC;
-				border-radius: 1%;
-				// border: 0.3em solid #bfbdbd;
-				padding: 0px;
-				// padding: 2em;
-				margin: 8em 2em 0em 2em;
-			}
-
-			.fetch-container {
-				// flex: 1 1 auto;
-				height: 55%;
-				width: 50%;
+				font-size: 1.2em;
+				width: 56%;
 				min-width: 470px;
 				min-height: 450px;
-				margin-left: 10%;
-				// margin: auto;
-			}
-
-			.info-container {
-				// flex: 1 1 auto;
-				height: 40%;
-				width: 30%;
-				float: right;
-			}
-
-			.container-head {
-				height: 2em;
-				background: #4A4545;
-				border-radius: 1%;
-			}
-
-			.container-bottom {
-				// height: 500em;
-			}
-
-			p {
-				padding-left: 3%;
+				background: #FFFFFF;
+				color: #363537;
+				margin: 3em auto;
+				padding-right: 100px;
+				padding-left: 100px;
 			}
 
 			.info-p {
-				// text-align: left;
 				position: relative;
 				top: 50%;
 				padding-left: 10%;
