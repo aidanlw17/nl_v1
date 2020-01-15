@@ -1,5 +1,5 @@
 import Header from './Header';
-import Head from 'next/Head';
+import Head from 'next/head';
 import MainContent from '../components/MainContent';
 
 const Layout = props => (
